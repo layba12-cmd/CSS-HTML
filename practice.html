@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>More CSS Topics</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+    div {
+      display: inline-block;
+      background-color: lightblue;
+      padding: 15px;
+      margin: 5px;
+    }
+    p {
+      background-color: lightgreen;
+      padding: 10px;
+    }
+    section {
+      width: 200px;
+      height: 70px;
+      overflow: auto;
+      background-color: lightyellow;
+      border: 1px solid black;
+    }
+    h2 {
+      position: relative;
+      left: 20px;
+    }
+    h3 {
+      position: relative;
+      z-index: 1;
+      background-color: orange;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Topics</h1>
+  <h2>Inline-block</h2>
+  <p>The boxes below sit next to each other because they use display: inline-block.</p>
+  <div>First box</div>
+  <div>Second box</div>
+  <h2>CSS Float</h2>
+  <p style="float: left; width: 120px;">This paragraph floats to the left. Text can flow beside it.</p>
+  <p style="clear: both;">This paragraph starts below the floated paragraph.</p>
+  <h2>CSS Overflow</h2>
+  <p>The box below has a set height. Scroll inside it to read all the text.</p>
+  <section>
+    This is a lot of text inside a small box. The overflow property adds scrollbars when the text does not fit in the box.
+  </section>
+  <h2>CSS Position and Offset</h2>
+  <p>The heading examples are moved 20 pixels to the right using the left offset.</p>
+  <h2>CSS Z-index</h2>
+  <p>Z-index controls which positioned element appears in front when elements overlap.</p>
+  <h3>This heading has a z-index value.</h3>
+</body>
+</html>
