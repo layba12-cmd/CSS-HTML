@@ -1,69 +1,21 @@
-.main{
-    height: 80vh;
-    background-color: beige;
-}
-.nav{
-    background-color: rgb(59, 50, 50);
-    color: white;
-    height: 60px;
+.container {
     display: flex;
-    justify-content: space-between;
+    background-color: lightblue;
+    justify-content: space-around;
     align-items: center;
-    width: 70%;
-        border-radius: 40px;
-    padding-right: 30px;
-    padding-left: 30px;
+    flex-wrap: wrap;
 }
-.nav-top{
-        display: flex;
-    justify-content: center;
-
+.item {
+    background-color: orange;
+    padding: 30px;
+    margin: 10px;
+    flex: 1;
 }
-
-/*  */
-.menu{
-    display: flex;
-    column-gap:10px;
-}
-.home{
-    padding: 10px;
-    border-radius: 30px;
-    background-color: white;
-    color: black;
-}
-.about{
-    padding: 10px;
-    border-radius: 30px;
-    background-color: white;
-    color: black;
-}
-.services{
-    background-color: white;
-    padding: 10px;
-    border-radius: 30px;
-    color: black;
-}
-.home:hover{
-    background-color: red;
-}
-.home:active{
-    background-color: rgb(255, 251, 0);
-}
-.about:hover{
-    background-color: red;
-}
-.about:active{
-    background-color: rgb(255, 251, 0);
-}
-.services:hover{
-    background-color: red;
-}
-.services:active{
-    background-color: rgb(255, 251, 0);
-}
-
-a{
-    color: white;
-    text-decoration: none; 
-
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .item {
+        width: 80%;
+    }
 }
