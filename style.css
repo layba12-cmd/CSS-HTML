@@ -1,21 +1,58 @@
-.container {
-    display: flex;
-    background-color: lightblue;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+body {
+    font-family: Arial;
 }
-.item {
-    background-color: orange;
-    padding: 30px;
-    margin: 10px;
-    flex: 1;
+h1 {
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
 }
-@media (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
-    .item {
-        width: 80%;
-    }
+h2 {
+    color: green;
+    text-decoration: underline;
+}
+p {
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.routine p {
+    color: blue;
+}
+.routine > p {
+    background-color: yellow;
+}
+.routine div + p {
+    color: red;
+}
+.routine div ~ p {
+    font-weight: bold;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: green;
+}
+.hobbies li:first-child {
+    color: blue;
+}
+.hobbies li:last-child {
+    color: red;
+}
+.hobbies li:nth-child(2) {
+    background-color: yellow;
+}
+.intro::first-letter {
+    color: red;
+    font-size: 30px;
+}
+.intro::first-line {
+    font-weight: bold;
+}
+.contact::before {
+    content: "Email: ";
+    color: blue;
+}
+.contact::after {
+    content: " - You can contact me.";
+    color: gray;
 }
